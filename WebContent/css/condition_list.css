@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    margin: 0 0 0 0;
+    line-height: 4em;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ffffff;
+    color: #7e734f;
+    border-bottom: solid 3px #dfdfde;
+
+}
+
+main{
+    margin:0 0 0 0;
+    padding-bottom: 110px;
+
+}
+
+table,tbody, td, th{
+    border: 1px solid #7e734f;
+    margin:auto;
+    width: 96%;
+    text-align:center
+
+
+
+}
+th{
+     color:#7e734f;
+    background-color: #f6f0e9;
+    margin:auto;
+    text-align:center;
+}
+
+
+table#condition_list th {
+    font-weight: bold;
+     margin:auto;
+     text-align:center;
+
+}
+
+table#condition_list .date{
+    width: 14%;
+    padding: 10px 2%;
+    text-align:center;
+
+}
+table#condition_list .food{
+    width: 12%;
+     padding: 10px 2%;
+}
+
+table#condition_list .water{
+    width: 12%;
+     padding: 10px 2%;
+     text-align:center;
+}
+
+table#condition_list .pee{
+    width: 12%;
+     padding: 10px 2%;
+     text-align:center;
+}
+
+table#condition_list .poop{
+    width: 12%;
+     padding: 10px 2%;
+}
+
+table#condition_list .vomit{
+    width: 12%;
+     padding: 10px 2%;
+     text-align:center;
+}
+
+table#condition_list .exercise{
+    width: 14%;
+     padding: 10px 2%;
+     text-align:center;
+}
+

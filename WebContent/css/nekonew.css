@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    margin: 0 0 0 0;
+    line-height: 4em;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ffffff;
+    color: #7e734f;
+    border-bottom: solid 3px #dfdfde;
+
+}
+
+main{
+    margin:0 0 0 0;
+    padding-bottom: 110px;
+}
+label {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 10px 0 20px 0;
+    padding: .5em .75em;
+    font-size: 1em;
+     color:#7e734f;
+    background-color: #f6f0e9;
+}
+lable[for=nekoname]{
+    display: block;
+    margin-top:300px;
+
+}
+
+input[type="text"] {
+    display: block;
+    margin: 1px 0 1px 10px; padding : 0.5px;
+    font-size: 1em;
+    padding: 0.5px;
+}
+
+#nekoname {
+    width: 40%;
+    line-height: 1em;
+}
+
+input[type="date"] {
+    display: block;
+    margin: 1px 0 1px 10px;
+    padding: 0.5px;
+    font-size: 1em;
+}
+
+#birthday {
+    width: 30%;
+    line-height: 1em;
+}
+
+
+select {
+    display: block;
+    margin: 1px 0 1px 10px;
+    padding: 0.5em 1em;
+    border: 1px solid;
+    font-size: 0.8em;
+    text-align: left;
+}
+textarea{
+    display: block;
+      margin: 1px 0 1px 30px;
+      min-width: 70%;
+      max-width: 70%;
+      height:60px;
+font-size: 1em;
+}
+
+#button_wrap input[type="submit"] {
+    margin-left: 45%;
+}
+
+#button_wrap2 input[type="submit"] {
+    margin-left: 0%;
+}
+
+#button_wrap3 input[type="submit"] {
+    margin-left: 0%;
+}
+
+input[type="submit"], input[type="button"], input[type="reset"] {
+    display: inline-block;
+    font-size: 10pt; /* 文字サイズ */
+    text-align: center; /* 文字位置   */
+    cursor: pointer; /* カーソル   */
+    padding: 10px 40px; /* 余白       */
+    background: #7e734f; /* 背景色     */
+    color: #fff; /* 文字色     */
+    line-height: 0.5em; /* 1行の高さ  */
+    transition: .3s; /* なめらか変化 */
+    border: 1px solid;
+}
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {
+  background: #7e734f;
+}

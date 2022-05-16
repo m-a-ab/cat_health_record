@@ -1,0 +1,86 @@
+.flush_success {
+    width: 100%;
+    padding-top: 28px;
+    padding-left: 2%;
+    padding-bottom: 28px;
+    margin-bottom: 15px;
+    color: #155724;
+    background-color: #d4edda;
+}
+
+.flush_error {
+    width: 100%;
+    padding-top: 28px;
+    padding-left: 2%;
+    padding-bottom: 28px;
+    margin-bottom: 15px;
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+header {
+    width: 100%;
+    margin: 0 0 0 0;
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ffffff;
+    color: #7e734f;
+    padding: 0.9em;
+    border-bottom: solid 3px #dfdfde;
+    position: fixed;
+    z-index: 999;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cell {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cell div {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 1px solid #F5BC7A;
+}
+
+.button-center {
+    text-align: center;
+
+}
+.button-center form{
+    display: inline-block;
+}
+.button {
+    background: #F5BC7A;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+    width: 100px;
+}
+
+.button:hover {
+    background: #F5A549;
+}

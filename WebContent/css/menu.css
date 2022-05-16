@@ -1,0 +1,155 @@
+/* リセットCSS */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+.btn {
+  /* ボタンの配置位置  */
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  /* ボタンの大きさ  */
+  width: 58px;
+  height: 48px;
+  /* バーガーの線をボタン範囲の中心に配置 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 最前面に */
+  z-index: 10;
+}
+
+/***** 真ん中のバーガー線 *****/
+.btn-line {
+  /* 線の長さと高さ */
+  width: 100%;
+  height: 4px;
+  /* バーガー線の色 */
+  background-color: #333;
+  /* バーガー線の位置基準として設定 */
+  position: relative;
+  transition: .2s;
+}
+
+/***** 上下のバーガー線 *****/
+.btn-line::before,
+.btn-line::after {
+  /* 基準線と同じ大きさと色 */
+  position: absolute;
+  transition: .5s;
+}
+
+
+.btn-line::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  /* 上の線の位置 */
+  transform: translateY(-16px);
+}
+
+
+.btn-line::after {
+  content: "menu";
+  /* 下の線の位置 */
+  display: block;
+  width: 100%;
+  text-align: center;
+  transform: translateY(8px);
+  color: #000;
+}
+
+/***** メニューオープン時 *****/
+.btn-line.open {
+  transition: .5s;
+}
+
+.btn-line.open::before {
+  content: "";
+  transform: translateY(0);
+}
+
+.btn-line.open::after {
+  content: "close";
+  color: #000;
+}
+/* ここまでボタンアニメーション */
+
+/**************** ここまで、ハンバーガーボタンのスタイリング ****************/
+
+/**************** 以下、メニューのスタイリング ****************/
+.menu {
+  position: fixed;
+  margin-top:0;
+  /* メニューの位置マイナス指定で画面外に */
+  transform : translateX(150%);
+  width: 70%;
+  height: 100vh;
+  /* メニューを縦に */
+  display: flex;
+  flex-direction: column;
+  color: #efefef;
+  background-color: rgba(167, 148, 58, 0.7);
+  transition: transform .3s;
+  z-index:999;
+}
+
+.menu-lists {
+  width: 100%;
+  height: 100%;
+  /* メニューテキスト位置をリスト内中心に */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-lists:hover {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: .3s;
+  cursor: pointer;
+}
+
+/***** メニューオープン時位置0にして画面内に *****/
+.menu.open {
+  transform: translateX(30%);
+}
+
+/* 600px以上はハンバーガーボタン非表示、ヘッダー固定 */
+@media screen and (min-width: 600px) {
+  .btn {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    bottom: 0; /*下に固定*/
+    transform : translateX(0);
+    width: 100%;
+    height: 100px;
+    /* メニューを横に */
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/**************** ここまで、メニューのスタイリング ****************/
